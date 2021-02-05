@@ -13,7 +13,6 @@ brotlipy==0.7.0
 census==0.8.10
 certifi==2020.12.5
 citipy==0.0.5
-clyent==1.2.2
 configparser==5.0.1
 contextlib2==0.6.0.post1
 contextvars==2.4
