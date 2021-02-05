@@ -61,7 +61,6 @@ pycosat==0.6.3
 pycrypto==2.6.1
 pycurl==7.43.0.6
 pymongo==3.11.2
-pyodbc===4.0.0-unsupported
 pytest==6.2.2
 PyYAML==5.4.1
 pyzmq==20.0.0
