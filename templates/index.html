@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meyer-Briggs Personality Type Analysis</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="space"></div>
+        <div class="space"></div>
+        <h1 style="color: #1976D2; font-family: Verdana; font-size: 48px;" class="text-center"><b>P</b>ersonality
+          <b>P</b>rediction <b>P</b>roject</h1>
+        <div class="space"></div>
+        <h3 style="color: #78909C;" class="text-center">An assessment of an individual's personality type based on:</h3>
+        <div class="space"></div>
+        <h4 style="color: #78909C;" class="text-center">1. Meyer-Briggs type indicator </h4>
+        <h4 style="color: #78909C;" class="text-center">2. Social media posts</h4>
+      </div>
+      <div class="col-md-8">
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <img src="static/images/brain.jpg" alt="personalities" width="400" height="350" class="mx-auto d-block"> 
+    </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3>In Other Words:</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p>When we analyze a large dataset of social media posts and we know the Meyer Brigg's Type Indiator (or MBTI
+          for short) of the person behind each post, and we now take a social media post of someone whose MBTI we don't
+          know, how accurately can we predict their MBTI?</p>
+      </div>
+      <div class="col-md-12">
+        <h3>Background Information:</h3>
+        <p>The Myers Briggs Type Indicator (or MBTI for short) is a personality type system that divides everyone into
+          16 distinct personality types that are combinations of the following characteristics:</p>
+        <hr>
+        <ol>
+          <li>Introversion (I) - Extroversion (E)</li>
+          <li>Intuition (N) - Sensing (S)</li>
+          <li>Thinking (T) - Feeling (F)</li>
+          <li>Judging(J) - Perceiving(P)</li>
+        </ol>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Visualizations</h1>
+        <hr>
+        <hr>
+        <h2>1. Frequency of BM Types</h2>
+        <p>How many of each of the 16 types are represented in the dataset</p>
+        <hr>
+        <hr>
+        
+        <img src="static/images/Frequency.png" alt="Frequency_of_Types" width="1000" height="500" class="mx-auto d-block"
+          class="rounded-circle"> 
+          <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+          <h2>2. Word Count</h2>
+          <div id="scatter">
+           <p>The frequency of the most used words in social media posts</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>3. Machine Learning</h2>
+        <p>Correlations between social media post attributes and personality type</p>
+        <hr>
+        <hr>
+        
+        <img src="static/images/machine-learning.png" alt="Machine Learning" width="1000" height="500" class="mx-auto d-block"
+          class="rounded-circle"> 
+          <hr>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="row justify-content-left">
+      <div class="col-md-4">
+        <div class="box">
+          <h5>A group project by:</h5>
+          <h6>Mackenzie Baucum</h6>
+          <h6>Ksenia Dyakova</h6>
+          <h6>Michael Reichard</h6>
+          <h6>Rainer Perry</h6>
+          <hr>
+          <hr>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="static/js/app.js"></script>
+
+</body>
+
+
+</html>
